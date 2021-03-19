@@ -1,0 +1,55 @@
+.gn-wrapper-85{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.gn-mb-20{
+  margin-bottom: 20px;
+}
+.gn-header-fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  z-index: 999;
+  background-color: rgb(240, 99, 181);
+  color: #062051;
+}
+
+.gn-header-fixed nav li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.gn-main-jumbotron{
+  min-height: 350px;
+  margin-top: 60px;
+  background-color: tomato;
+  padding: 30px;
+}
+
+.gn-jumbotron{
+  background-color: crimson;
+  padding: 30px;
+  min-height: 300px;
+}
+
+.green{
+  background-color: greenyellow;
+  min-height: 100px;
+
+}
+
+.blu{
+  background-color: rgb(24, 152, 238);
+  min-height: 100px;
+
+}
+
+.gn-main-top{
+  min-height: 150px;
+  background-color: rgb(12, 250, 32);
+  padding-top: 20px;
+}
