@@ -24,7 +24,12 @@
 .blu{
   background-color: rgb(24, 152, 238);
   min-height: 100px;
+}
 
+.viola{
+  background-color: rgb(195, 24, 238);
+  border: 1px solid black;
+  min-height: 70px;
 }
 .gn-header-fixed{
   position: fixed;
@@ -62,8 +67,12 @@
 }
 
 .prova-img{
-  max-width: 500px;
+  max-width: 600px;
   height: 250px;
   background-color: lightcoral;
+}
 
+.freccia{
+  line-height: 250px;
+  font-size: 35px;
 }
