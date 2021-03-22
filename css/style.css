@@ -1,4 +1,8 @@
 /* global */
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 .gn-wrapper-85 {
   width: 85%;
   margin: 0 auto;
@@ -8,6 +12,33 @@
   margin: 0 auto;
 }
 
+/* formatazione font */
+h1{
+  font-size: 55px;
+}
+
+p{
+  font-size: 20px;
+}
+
+.small{
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.gn-text-white{
+  color: white;
+}
+
+.gn-text-blu{
+  color: #006AFF;
+}
+
+.gn-fs-29{
+  font-size: 29px;
+}
+
+/* formatazione margin & padding */
 .gn-mb-20 {
   margin-bottom: 20px;
 }
@@ -21,6 +52,10 @@
 }
 .gn-pt-30 {
   padding-top: 30px;
+}
+
+.gn-padding-left-40{
+  padding-left: 60px; 
 }
 
 .gn-pd-right {
@@ -59,25 +94,87 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 75px;
-  line-height: 75px;
+  padding-top: 5px;
+  height: 73px;
+  line-height: 73px;
   z-index: 999;
-  background-color: rgb(240, 99, 181);
-  color: #062051;
+  background-color: white;
+}
+
+.gn-header-fixed img{
+  max-width: 160px;
 }
 
 .gn-header-fixed nav li {
-  list-style: none;
   display: inline-block;
-  padding: 0 10px;
+  list-style: none;
+  padding: 0 9px;
+  vertical-align: middle;
 }
 
+.gn-header-fixed nav li a,i{
+  text-decoration: none;
+  color: #062051;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.gn-btn{
+  border: 1px solid #006AFF;
+  background-color: white;
+  color: #006AFF;
+}
+
+/* jumbotron */
 .gn-main-jumbotron {
   min-height: 490px;
-  margin-top: 75px;
-  background-color: tomato;
+  margin-top: 73px;
+  background-image: url(../img/bg-banner-home.jpg);
+  background-position: 46%;
+  background-size: 110% 100%;
   padding: 60px 30px;
 }
+
+.box-jb{
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px 20px;
+  margin: 0px 48px;
+}
+
+.box-jb  a{
+  text-decoration: underline;
+}
+
+.gn-btn-jb{
+  display: block;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: #579AFF;
+  margin-bottom: 5px;
+}
+
+.gn-btn-jb-special{
+  position: relative;
+  color: #626262;
+  background-color: white;
+  box-shadow: 1px 1px 3px #d2d8dfea;
+  font-weight: 600;
+}
+
+.gn-btn-jb-special img{
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 18px;
+}
+
+.form-group ::placeholder{
+  font-weight: 500;
+  font-size: 16px;
+}
+
 
 /* sezione con img */
 .prova-img {
