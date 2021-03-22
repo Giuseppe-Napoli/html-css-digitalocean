@@ -15,6 +15,12 @@ body{
 /* formatazione font */
 h1{
   font-size: 55px;
+  color: white;
+}
+
+h2{
+  font-size: 35px;
+  font-weight: 500;
 }
 
 p{
@@ -26,16 +32,35 @@ p{
   margin-top: 12px;
 }
 
+.medium{
+  font-size: 16px;
+}
+
 .gn-text-white{
-  color: white;
+  color: #AFC4FF;
 }
 
 .gn-text-blu{
   color: #006AFF;
 }
 
+.gn-text-blu-night{
+  color: #031C4E;
+
+}
+
+.gn-text-grey{
+  color: #5C6A88;
+}
+
 .gn-fs-29{
   font-size: 29px;
+}
+
+.gn-font-bs{
+  font-size: 16px;
+  font-weight: 500;
+  color: #76819C;
 }
 
 /* formatazione margin & padding */
@@ -50,6 +75,10 @@ p{
 .gn-pd-30 {
   padding: 0 30px;
 }
+.gn-pt-50 {
+  padding-top: 50px;
+}
+
 .gn-pt-30 {
   padding-top: 30px;
 }
@@ -78,6 +107,11 @@ p{
   min-height: 370px;
 }
 
+.gn-bk-gray{
+  background-color: #F3F5F9;
+  min-height: 275px;
+}
+
 .blu {
   background-color: rgb(24, 152, 238);
   min-height: 255px;
@@ -88,6 +122,7 @@ p{
   border: 1px solid black;
   min-height: 70px;
 }
+
 
 /* header */
 .gn-header-fixed {
@@ -176,7 +211,24 @@ p{
 }
 
 
+.gn-list{
+  list-style: none;
+  padding-left: 10px;
+  border-left: 1px solid #CCCCCC;
+}
+
+.gn-list li{
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: #75809A;
+}
+
 /* sezione con img */
+
+.sponsor{
+  width: 100%;
+  height: 100px;
+}
 .prova-img {
   height: 400px;
   width: 100%;
