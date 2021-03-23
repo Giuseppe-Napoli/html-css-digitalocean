@@ -14,7 +14,7 @@ body{
 
 /* formatazione font */
 h1{
-  font-size: 55px;
+  font-size: 63px;
   color: white;
 }
 
@@ -24,7 +24,7 @@ h2{
 }
 
 p{
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .small{
@@ -53,6 +53,10 @@ p{
   color: #5C6A88;
 }
 
+.gn-text-green{
+  color: #00C1CD;
+}
+
 .gn-fs-29{
   font-size: 29px;
 }
@@ -61,6 +65,10 @@ p{
   font-size: 16px;
   font-weight: 500;
   color: #76819C;
+}
+
+.gn-bb-w{
+  border-bottom: 1px solid white;
 }
 
 /* formatazione margin & padding */
@@ -72,11 +80,15 @@ p{
   padding: 50px 0;
 }
 
-.gn-pd-30 {
-  padding: 0 30px;
-}
 .gn-pt-50 {
   padding-top: 50px;
+}
+
+.gn-pt-70 {
+  padding-top: 70px;
+}
+.gn-pb-90 {
+  padding-bottom: 90px;
 }
 
 .gn-pt-30 {
@@ -88,7 +100,7 @@ p{
 }
 
 .gn-pd-right {
-  padding-right: 7px;
+  padding-right: 30px;
 }
 
 /* colore */
@@ -97,9 +109,10 @@ p{
   min-height: 340px;
 }
 
-.orange {
-  background-color: rgb(230, 146, 21);
-  min-height: 100px;
+.blu-sfumato {
+  background-image: linear-gradient(359deg,#00219C,#0044C2);
+  color: white;
+  padding: 20px 60px;
 }
 
 .sky {
@@ -113,7 +126,7 @@ p{
 }
 
 .blu {
-  background-color: rgb(24, 152, 238);
+  background-color: background-color: #006AFF);
   min-height: 255px;
 }
 
@@ -157,9 +170,8 @@ p{
 .gn-btn{
   border: 1px solid #006AFF;
   background-color: white;
-  color: #006AFF;
 }
-
+/* MAIN */
 /* jumbotron */
 .gn-main-jumbotron {
   min-height: 490px;
@@ -170,11 +182,11 @@ p{
   padding: 60px 30px;
 }
 
+
 .box-jb{
   background-color: white;
   border-radius: 5px;
   padding: 30px 20px;
-  margin: 0px 48px;
 }
 
 .box-jb  a{
@@ -210,39 +222,83 @@ p{
   font-size: 16px;
 }
 
-
-.gn-list{
-  list-style: none;
-  padding-left: 10px;
-  border-left: 1px solid #CCCCCC;
-}
-
-.gn-list li{
-  padding-bottom: 15px;
-  font-size: 20px;
-  color: #75809A;
-}
-
-/* sezione con img */
-
+/* parte sponsor */
 .sponsor{
   width: 100%;
   height: 100px;
 }
-.prova-img {
-  height: 400px;
-  width: 100%;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  background-color: lightcoral;
+
+/* sezione con annidamenti nelle col di dx */
+.gn-list{
+  list-style: none;
+  padding: 10px;
+  border-left: 2px solid #CCCCCC;
 }
 
-.freccia {
-  line-height: 400px;
+.gn-list li a{
+  font-size: 18px;
+  color: #75809A;
+}
+
+/* sezione con immagine al centro  */
+.freccia i{
+  margin-top: 180px;
   font-size: 35px;
+  color: #6F7B97;
+}
+
+.freccia:hover i{
+  font-size: 40px;
+  color: #031C4E;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.ball-list li{
+  list-style: none;
+  display: inline-block;
+}
+
+.ball-list li i:active{
+  background-color: #006AFF;
+  border-radius: 50%;
+}
+
+.gn-size-img {
+  max-width: 100%;
+  max-height: 390px;
+}
+
+.gn-box-img{
+  width: 100%;
+  height: 390px;
+  background-color: white;
+  border-radius: 5px ;
+
+}
+.gn-box-img img{
+  width: 300px;
+}
+
+/* sezione 12 regions */
+
+.gn-space-regions{
+  margin: 0 5px;
+  padding: 10px 0;
 }
 
 /* footer */
 footer {
   background-color: #b6108c;
+}
+
+
+
+@media all and (max-width: 1200px){
+  .gn-main-jumbotron h1{
+    font-size: 35px;
+  }
+  .gn-main-jumbotron  .txt-jb{
+    font-size: 18px;
+  }
 }
