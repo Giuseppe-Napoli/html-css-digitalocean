@@ -155,6 +155,10 @@ p {
   min-height: 275px;
 }
 
+.gn-bk-wh{
+  background-color: white;
+  border-radius: 5px;
+}
 /* HEADER */
 .gn-header-fixed {
   position: fixed;
@@ -312,6 +316,112 @@ footer a:hover i {
   color: white;
 }
 
+/* Help Chat */
+.container-shark{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 40px;
+  text-align: left;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.gn-chat-left,
+.gn-chat-right{
+  position: relative;
+  float: right;
+  height: 80px;
+}
+
+.gn-chat-left{
+  width: 350px;
+  margin-right: 20px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+
+.gn-chat-left > div{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+/*Triangolo Laterale Chat*/
+.gn-chat-left > div::after{
+  position: absolute;
+  top:80%;
+  right: -7px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  transform: translateY(-80%);
+  /* triangolo */
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+}
+.gn-chat-right{
+  width: 60px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+}
+.gn-avatar{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #0069FF;
+  border-radius: 5px;
+}
+.gn-chat-right img{
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gn-chat-right .gn-number{
+  position: absolute;
+  top:-9px;
+  right:-9px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 100%;
+  border: 4px solid white;
+}
+.gn-chat-right .gn-number span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  color: white;
+}
+
+@media screen and (max-width: 780px) {
+  .gn-chat-left{
+    max-width: 100%;
+    float: none;
+  }
+  .gn-chat-right{
+    float: none;
+  }
+  .gn-avatar,
+  .gn-chat-left > div{
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container-shark {
+    display: none;
+  }
+}
 /* media-query */
 @media all and (max-width: 1200px) {
   .gn-main-jumbotron h1 {
